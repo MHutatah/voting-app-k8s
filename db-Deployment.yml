@@ -16,6 +16,22 @@ spec:
       containers:
         - name: postgres
           image: postgres:latest
+        - env:
+          - name: "POSTGRESQL_DATABASE"
+            valueFrom:
+              configMapKeyRef:
+                name: db
+                key: database-name
+          - name: "POSTGRESQL_USER"
+            valueFrom:
+              secretKeyRef:
+                name: db
+                key: database-user
+          - name: "POSTGRESQL_PASSWORD"
+            valueFrom:
+              secretKeyRef:
+                name: db
+                key: database-password
   replicas: 1
   selector:
     matchLabels:
