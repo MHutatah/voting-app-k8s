@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Vote-Deployment
+  name: VoteDeployment
   labels:
     app: Vote-App
     type: frontend

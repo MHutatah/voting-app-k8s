@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Worker-Deployment
+  name: WorkerDeployment
   labels:
     app: Worker-App
     type: backend
