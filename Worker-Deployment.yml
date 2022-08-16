@@ -10,7 +10,7 @@ spec:
     metadata:
       name: Worker-Pod
       labels:
-        app: 000h/worker
+        app: Worker-App
         type: backend
     spec:
       containers:
