@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ResultDeployment
+  name: result-deployment
   labels:
     app: Result-App
     type: frontend
