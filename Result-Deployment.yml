@@ -10,7 +10,7 @@ spec:
     metadata:
       name: Result-Pod
       labels:
-        app: 000h/result
+        app: Result-App
         type: frontend
     spec:
       containers:
