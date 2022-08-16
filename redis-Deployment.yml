@@ -16,6 +16,8 @@ spec:
       containers:
         - name: redis
           image: redis:latest
+          ports:
+          - containerPort: 6379
   replicas: 1
   selector:
     matchLabels:
