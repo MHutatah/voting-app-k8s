@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: Result-Service
+  name: result-service
   labels:
     app: Result-Service
 spec:
