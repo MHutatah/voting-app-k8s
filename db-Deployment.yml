@@ -14,7 +14,7 @@ spec:
         type: backend
     spec:
       containers:
-      - image: postgres:9.4
+      - image: postgres
         name: postgres
         env:
         - name: POSTGRES_USER
