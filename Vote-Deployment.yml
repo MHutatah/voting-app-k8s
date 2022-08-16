@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Vote-Deployment
+  labels:
+    app: Vote-App
+    type: frontend
+spec:
+  template:
+    metadata:
+      name: Vote-Pod
+      labels:
+        app: Vote-App
+        type: frontend
+    spec:
+      containers:
+        - name: Vote
+          image: 000h/vote
+  selector:
+    matchLabels:
+      type: frontend
