@@ -14,7 +14,7 @@ spec:
         type: frontend
     spec:
       containers:
-        - name: Vote
+        - name: vote
           image: 000h/vote
   selector:
     matchLabels:
